@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+main {
+  display: flex;
+  box-shadow: 1px 1px 3px black, -1px -1px 3px black;
+  min-width: 1000px;
+  height: 600px;
+  justify-content: space-between;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+/****** left section ******/
+.L-S {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.ls-img {
+  padding: 30px 60px 30px;
+}
+
+.ls-content {
+  padding: 10px 60px 30px;
+  text-align: left;
+}
+
+h1 {
+  font-size: 50px;
+  letter-spacing: 12px;
+  font-weight: 600;
+}
+h1 > span {
+  font-weight: 300;
+  color: var(--Desaturated-Red);
+}
+
+.ls-p {
+  font-weight: 400;
+  color: var(--Desaturated-Red);
+
+  width: 130%;
+  line-height: 1.3rem;
+}
+
+label[for="email"] {
+  display: none;
+}
+.input-email {
+  width: 120%;
+  border: 1px solid var(--Desaturated-Red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 222px;
+  position: relative;
+}
+
+#email {
+  border-radius: 222px;
+  width: 260px;
+  padding: 15px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.error-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 65px;
+  opacity: 0;
+}
+
+.btn-email {
+  border-radius: 44px;
+  position: absolute;
+  right: -44px;
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: 1px solid var(--Desaturated-Red);
+  box-shadow: 1px 1px 3px var(--Desaturated-Red);
+}
+
+.btn-email:hover {
+  background: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 100%, 98%));
+}
+
+.arrow-icon {
+}
+
+/****** right section section ******/
+.R-S {
+  width: 458px;
+  height: 600px;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+}
+
+/****** root color ******/
+
+:root {
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+/* - Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%) */
